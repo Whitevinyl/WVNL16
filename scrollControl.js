@@ -25,7 +25,7 @@ function scrollCheck(e) {
         if (scrollEnabled) {
 
             height = window.innerHeight;
-            threshold = document.body.scrollTop + Math.min(660,height);
+            threshold = document.body.scrollTop + Math.min(680,height);
 
             for (h=0; h<posts.length; h++) {
                 top = posts[h].offsetTop;
