@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript" src="lib/tween.min.js"></script>
+    <script type="text/javascript" src="logoAnimate.js"></script>
+    <script type="text/javascript" src="scrollControl.js"></script>
+    <script type="text/javascript" src="palette.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400|Titillium+Web:300i,400i" rel="stylesheet">
+</head>
+<body onload="init()">
+
+<div id="background" class="bg"></div>
+
+<div id="sidebar" class="foreground main">
+
+    <div id="logo" class="col1 row1">
+        <SVG id="logoSvg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path id="logoD1" d="M16.75 17.7  L2.5 17.7  L 41.6 97.5  L55.9 97.5  L16.75 17.7" vector-effect="non-scaling-stroke" stroke="currentColor" stroke-width="1.1" fill="none"></path>
+            <path id="logoD2" d="M55.9 97.5  L55.9 42.44  M44.06 17.7  L44.06 72.76" vector-effect="non-scaling-stroke" stroke="currentColor" stroke-width="1.1" fill="none"></path>
+            <path id="logoD3" d="M44.06 17.7  L83.25 97.5  L97.5 97.5  L 58.31 17.7  L44.06 17.7" vector-effect="non-scaling-stroke" stroke="currentColor" stroke-width="1.1" fill="none"></path>
+        </SVG>
+    </div>
+
+    <div id="menu" class="col1 row1 mid topLine">
+        <div class="topPad">
+            <a href="" class="link"><div class="linkLine sub">01</div>Work</a>
+            <a href="" class="link"><div class="linkLine sub">02</div>About</a>
+            <a href="" class="link"><div class="linkLine sub">03</div>Experiments</a>
+        </div>
+
+    </div>
+    <div id="social" class="col1 row1 topLine">
+        <div class="topPad">
+            <a href="http://twitter.com/whitevinyluk" target="_blank" class="link"><div class="linkLine sub">01</div>Twitter</a>
+            <a href="http://facebook.com/whitevinyldesign" target="_blank" class="link"><div class="linkLine sub">02</div>Facebook</a>
+        </div>
+    </div>
+</div>
+
+<div id="main" class="foreground main">
+
+    <div id="content">
+
+        <div class="project">
+
+            <div class="number col1 row1 topLine header block">
+                <div class="index">01</div>
+                <div class="total">09</div>
+            </div>
+
+
+            <div class="col1 row1 block">
+                <SVG class="diagonal">
+                    <line x1="75%" y1="25%" x2="25%" y2="75%" stroke="currentColor" stroke-width="1.1" fill="none"></line>
+                </SVG>
+            </div>
+
+
+            <div class="caps col3 row1 header block">
+                <div class="title">
+                    Yume
+                </div>
+            </div>
+
+
+            <div class="squiggle col1">
+                <SVG class="squiggleSvg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100  L11.1 0  L22.2 100  L33.3 0  L44.4 100 L55.5 0  L66.6 100 L77.7 0  L88.8 100 L99.9 0" vector-effect="non-scaling-stroke" stroke="currentColor" stroke-width="1.1" fill="none"></path>
+                </SVG>
+            </div>
+
+
+            <div class="tag col1 rowMin1 block">
+                <div class="shortLine tagLine"></div>
+                <div class="tagText sub">
+                    audio / web
+                </div>
+            </div>
+
+
+            <div class="summary col1 rowMin1 main block">
+                <div class="baselineUp">
+                    Interactive music, visuals and exploration
+                </div>
+            </div>
+
+
+            <div class="launch col1 row1 caps mid block">
+                <div class="launchButton">
+                    <div class="launchText baselineUp">
+                        Launch
+                    </div>
+
+                    <div class="launchIcon">
+                        <SVG viewBox="0 0 100 100" preserveAspectRatio="none" class="launchIconB  highlight2" >
+                            <path d="M52 2 L98 48 Q100 50 98 52 L52 98 Q50 100 48 98 L2 52 Q0 50 2 48 L48 2 Q50 0 52 2 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path>
+                            <!--<rect x="5" y="5" width="90" height="90" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></rect>-->
+                            <path d="M44 34 L60 50 L44 66" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path>
+                        </SVG>
+
+                        <SVG viewBox="0 0 100 100" preserveAspectRatio="none" class="launchIconA  highlight1" >
+                            <circle cx="50" cy="50" r="46" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle>
+                            <path d="M44 34 L60 50 L44 66" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path>
+                        </SVG>
+                    </div>
+                </div>
+
+                <div class="shortLine launchLine"></div>
+            </div>
+
+
+            <div class="description col3 rowMin1 main block">
+                <div class="baselineUp">
+                    YUME is an interactive experience created to promote the album 'Yume' by ambient artist Helios. Floating rock shards become tactile music controllers, which can also manipulate the environment. Different scenes can be freely explored, each one with a different feel/sound.
+                </div>
+            </div>
+
+
+            <div class="gallery col6 block">
+                <div class="imgBG">
+                    <img src="img/yume01.jpg">
+                </div>
+                <div class="imgBG">
+                    <img src="img/yume02.jpg">
+                </div>
+                <div class="imgBG">
+                    <img src="img/yume03.jpg">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="number col1 row1 topLine header block">
+                <div class="index">02</div>
+                <div class="total">09</div>
+            </div>
+
+
+            <div class="col1 row1 block">
+                <SVG class="diagonal">
+                    <line x1="75%" y1="25%" x2="25%" y2="75%" stroke="currentColor" stroke-width="1.1" fill="none"></line>
+                </SVG>
+            </div>
+
+
+            <div class="caps col3 row1 header block">
+                <div class="title">
+                    ARP
+                </div>
+            </div>
+
+            <div class="squiggle col1">
+                <SVG class="squiggleSvg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100  L11.1 0  L22.2 100  L33.3 0  L44.4 100 L55.5 0  L66.6 100 L77.7 0  L88.8 100 L99.9 0" vector-effect="non-scaling-stroke" stroke="currentColor" stroke-width="1.1" fill="none"></path>
+                </SVG>
+            </div>
+
+
+            <div class="tag col1 rowMin1 block">
+                <div class="shortLine tagLine"></div>
+                <div class="tagText sub">
+                    generative
+                </div>
+            </div>
+
+
+            <div class="summary col1 rowMin1 main block">
+                <div class="baselineUp">
+                    Twitter & SoundCloud bot, generating audio, images & words
+                </div>
+            </div>
+
+
+            <div class="launch col1 row1 caps mid block">
+                <div class="launchButton">
+                    <div class="launchText baselineUp">
+                        Launch
+                    </div>
+
+                    <div class="launchIcon">
+                        <SVG viewBox="0 0 100 100" preserveAspectRatio="none" class="launchIconB  highlight2" >
+                            <path d="M52 2 L98 48 Q100 50 98 52 L52 98 Q50 100 48 98 L2 52 Q0 50 2 48 L48 2 Q50 0 52 2 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path>
+                            <!--<rect x="5" y="5" width="90" height="90" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></rect>-->
+                            <path d="M44 34 L60 50 L44 66" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path>
+                        </SVG>
+
+                        <SVG viewBox="0 0 100 100" preserveAspectRatio="none" class="launchIconA  highlight1" >
+                            <circle cx="50" cy="50" r="46" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle>
+                            <path d="M44 34 L60 50 L44 66" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path>
+                        </SVG>
+                    </div>
+                </div>
+
+                <div class="shortLine launchLine"></div>
+            </div>
+
+
+            <div class="description col3 rowMin1 main block">
+                <div class="baselineUp">
+                    ARP is a fictional radio telescope observatory. It’s a Twitter & SoundCloud bot which procedurally generates audio, data visualisations, and the tweets ( and occasionally long-exposure photography ) of an astronomer/research scientist who works at ARP, who is obsessive over the audio messages, and who runs the observatory’s Twitter account.
+                </div>
+            </div>
+
+
+            <div class="gallery col6 block">
+                <div class="imgBG">
+                    <img src="img/arp_head.jpg">
+                </div>
+                <div class="imgBG">
+                    <img src="img/arp1.jpg">
+                </div>
+                <div class="imgBG">
+                    <img src="img/arp3.jpg">
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>

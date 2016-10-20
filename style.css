@@ -1,0 +1,409 @@
+body {
+    background-color: #1a0e1a;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
+svg {
+    fill: currentColor;
+}
+
+
+img {
+    max-width:100%;
+    vertical-align:bottom;
+    display: block;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.bg {
+    background-color: #1a0e1a;
+}
+
+.foreground {
+    color: #ffffff;
+}
+
+.highlight1 {
+    color: #00e2ba;
+}
+
+.highlight2 {
+    color: #dd55ff;
+}
+
+
+.header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 36px;
+}
+
+.mid {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.main {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.sub {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+
+
+body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#sidebar {
+    position: fixed;
+    left: 4%;
+    top: 90px;
+    text-align: left;
+    z-index: 10;
+}
+
+#main {
+    position: relative;
+    width: 95%;
+    margin-left: 4%;
+    text-align: left;
+}
+
+#content {
+    margin-left: 160px;
+    font-size: 0;
+}
+
+.block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.project {
+    margin-top: 90px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+#logo {
+    position: relative;
+}
+
+#logoSvg {
+    width: 156px;
+    height: 156px;
+    position: absolute;
+    bottom: -3px;
+    left: -26px;
+    display: block;
+}
+
+
+.link {
+    position: relative;
+    display: block;
+    padding-left: 0;
+
+    -webkit-transition: padding-left 0.4s;
+    -moz-transition: padding-left 0.4s;
+    transition: padding-left 0.4s;
+}
+
+.link:hover {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.link:hover .linkLine {
+    width: 30px;
+}
+
+.linkLine {
+    position: absolute;
+    left: -30px;
+    height:20px;
+    width: 0;
+    border-bottom: 1px solid;
+    overflow: hidden;
+
+    -webkit-transition: width 0.4s;
+    -moz-transition: width 0.4s;
+    transition: width 0.4s;
+}
+
+.diagonal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.diagonal2 {
+    position: relative;
+    top: 20px;
+    width: 130px;
+    height: 60px;
+    visibility: hidden;
+}
+
+.description {
+}
+
+.description .baselineUp {
+    padding-bottom: 52px;
+}
+
+
+.title {
+    position: relative;
+    display: block;
+    padding-top: 20px;
+}
+
+.squiggle {
+    position: absolute;
+    top: 0;
+    left: 800px;
+}
+
+.squiggleSvg {
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    top: -15px;
+    display: block;
+}
+
+.tag {
+    position: absolute;
+    top: 210px;
+    left: 160px;
+    text-align: left;
+}
+
+.tagText {
+    margin-top: 17px;
+}
+
+.tagLine {
+    position: absolute;
+    left: 0;
+}
+
+.number {
+    position: relative;
+}
+
+.index {
+    position: absolute;
+    left: 0;
+    top: -63px;
+}
+.total {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    text-align: right;
+}
+.label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    visibility: hidden;
+}
+
+.launch {
+    position: relative;
+}
+.launchText {
+    position: relative;
+}
+
+.launchIcon {
+    position: absolute;
+    top: -59px;
+    right: -2px;
+    height: 44px;
+    width: 44px;
+    text-align: right;
+    overflow: hidden;
+}
+
+.launchButton:hover .launchIconA {
+    height: 0;
+    opacity: 0.2;
+}
+.launchButton:hover .launchIconB {
+    height: 44px;
+}
+
+.launchIconA {
+    height: 44px;
+    width: 44px;
+    position: relative;
+    display: block;
+    opacity: 1;
+
+    -webkit-transition: height 0.2s, opacity 0.2s;
+    -moz-transition: height 0.2s, opacity 0.2s;
+    transition: height 0.2s, opacity 0.2s;
+
+}
+.launchIconB {
+    height: 0;
+    width: 44px;
+    position: relative;
+    display: block;
+
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+}
+
+.launchLine {
+    position: absolute;
+    top: 0;
+}
+
+.summary {
+    margin-left: 350px !important;
+}
+
+.gallery {
+    margin-left: 190px !important;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    opacity: 0.99;
+    margin: 0;
+    display: inline-block;
+}
+
+.gallery .imgBG {
+    width: 100%;
+    display: inline-block;
+    background-color: #eb6bff;
+    margin-bottom: 60px;
+}
+
+
+.baselineUp {
+    margin-top: -52px;
+}
+
+.shortLine {
+    width: 30px;
+    height: 1px;
+    border-top: 1px solid;
+}
+
+
+.col1 {
+    width: 130px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.col2 {
+    width: 290px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.col3 {
+    width: 450px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.col4 {
+    width: 610px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.col5 {
+    width: 770px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.col6 {
+    width: 930px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.row1 {
+    height: 180px;
+}
+
+.rowMin1 {
+    min-height: 180px;
+}
+
+
+.bottomLine {
+    border-bottom: 1px solid;
+}
+
+.topLine {
+    border-top: 1px solid;
+}
+
+.topPad {
+    padding-top: 12px;
+}
